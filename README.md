@@ -1,11 +1,29 @@
-<div align="center">
+# Supermarket Management System
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb0a938e-612a-41ef-b2c8-2d8afa544a00/deploy-status)](https://app.netlify.com/projects/polite-twilight-aa5a28/deploys)
 
-  <h1>Built with AI Studio</h2>
+A comprehensive multi-store point-of-sale (POS) and inventory management web application built with React, TypeScript, Tailwind CSS, and Firebase Firestore.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Features
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- **Cash Counter (POS)**: Fast barcode scanning, cart calculations, voice greetings, cash calculator (amount received & change return), and receipt generation.
+- **Product Registry**: Add and manage products with unique barcode and serial number validation.
+- **Store Admin Dashboard**: Track sales revenue, inventory levels, stock warnings, and transaction logs.
+- **Super Admin Panel**: Manage multiple supermarket store branches, cash counter users, and network settings.
 
-</div>
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Build for production:
+   ```bash
+   npm run build
+   ```

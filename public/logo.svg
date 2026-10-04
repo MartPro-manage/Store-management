@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <!-- Background -->
+  <rect width="1000" height="1000" fill="#ffffff" rx="0"/>
+  
+  <g transform="translate(0, -10)">
+    <!-- SPEED LINES (Left) -->
+    <g fill="#FF6A00">
+      <!-- Top speed line -->
+      <rect x="260" y="230" width="120" height="28" rx="14" />
+      <!-- Middle speed line -->
+      <rect x="200" y="360" width="165" height="28" rx="14" />
+      <!-- Bottom speed line -->
+      <rect x="265" y="410" width="100" height="28" rx="14" />
+    </g>
+
+    <!-- DYNAMIC SWOOSH ACCENT (Right Crescent) -->
+    <!-- Outer orange curve -->
+    <path d="M 698 255 C 815 315 845 425 780 500 C 715 575 620 545 620 545 C 720 520 765 440 720 370 C 690 320 645 285 645 285 C 665 272 682 263 698 255 Z" fill="#FF6A00" />
+    <!-- Inner black sliver of swoosh -->
+    <path d="M 735 480 C 695 530 622 545 622 545 C 690 528 735 480 742 435 C 746 450 743 468 735 480 Z" fill="#1E2229" />
+
+    <!-- GROCERIES INSIDE CART -->
+    <!-- Milk bottle with orange cap -->
+    <rect x="495" y="198" width="36" height="20" rx="5" fill="#FF6A00" />
+    <path d="M 503 218 L 492 245 L 492 305 L 555 305 L 555 245 L 544 218 Z" fill="#1E2229" />
+    <!-- White bottle label / highlight -->
+    <rect x="498" y="252" width="51" height="35" fill="#FFFFFF" rx="4" />
+
+    <!-- Cereal / Juice Box Left -->
+    <path d="M 405 260 L 478 230 L 498 305 L 418 305 Z" fill="#FF6A00" />
+    <polygon points="412,257 435,248 440,305 417,305" fill="#FFA040" opacity="0.7" />
+    <!-- Box Right -->
+    <path d="M 548 230 L 612 242 L 595 305 L 540 305 Z" fill="#FF6A00" />
+    <polygon points="560,233 578,236 572,305 554,305" fill="#FFA040" opacity="0.7" />
+
+    <!-- Orange Fruit with stem/leaf -->
+    <ellipse cx="650" cy="285" rx="40" ry="32" fill="#FF6A00" />
+    <path d="M 655 255 C 665 240 688 235 688 235 C 688 235 685 255 668 262 Z" fill="#1E2229" />
+
+    <!-- SHOPPING CART FRAME & HANDLE -->
+    <!-- Handle (Orange) -->
+    <path d="M 265 245 L 355 245 C 370 245 378 255 375 270 L 345 270 C 338 270 330 262 320 262 L 265 262 Z" fill="#FF6A00" />
+
+    <!-- Frame Strut (Black) from handle down to wheels base -->
+    <path d="M 345 260 L 405 480 L 635 480 C 640 480 644 476 642 470 L 630 460 L 420 460 L 372 260 Z" fill="#1E2229" />
+
+    <!-- CART BASKET BODY (Black) -->
+    <path d="M 400 310 L 715 310 C 718 310 720 313 718 316 L 668 470 C 666 474 662 476 658 476 L 442 476 C 438 476 434 473 433 468 L 398 315 C 397 312 398 310 400 310 Z" fill="#1E2229" />
+
+    <!-- ORANGE BARCODE BRACKET & BARS ON CART BASKET -->
+    <!-- Orange bracket corners -->
+    <g stroke="#FF6A00" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Top Left bracket corner -->
+      <path d="M 505 348 L 476 348 L 476 374" />
+      <!-- Bottom Left bracket corner -->
+      <path d="M 476 414 L 476 440 L 505 440" />
+      <!-- Top Right bracket corner -->
+      <path d="M 615 348 L 644 348 L 644 374" />
+      <!-- Bottom Right bracket corner -->
+      <path d="M 644 414 L 644 440 L 615 440" />
+    </g>
+
+    <!-- White Barcode Background Box -->
+    <rect x="496" y="350" width="128" height="88" fill="#FFFFFF" rx="4" />
+
+    <!-- Black Barcode Lines inside white box -->
+    <g fill="#1E2229">
+      <rect x="508" y="358" width="9" height="72" />
+      <rect x="524" y="358" width="6" height="72" />
+      <rect x="536" y="358" width="13" height="72" />
+      <rect x="556" y="358" width="5" height="72" />
+      <rect x="567" y="358" width="11" height="72" />
+      <rect x="585" y="358" width="7" height="72" />
+      <rect x="598" y="358" width="14" height="72" />
+    </g>
+
+    <!-- CART WHEELS (Orange outer with black inner) -->
+    <!-- Left wheel -->
+    <circle cx="448" cy="528" r="30" fill="#FF6A00" />
+    <circle cx="448" cy="528" r="13" fill="#1E2229" />
+    <circle cx="448" cy="528" r="4" fill="#FF6A00" />
+
+    <!-- Right wheel -->
+    <circle cx="586" cy="528" r="30" fill="#FF6A00" />
+    <circle cx="586" cy="528" r="13" fill="#1E2229" />
+    <circle cx="586" cy="528" r="4" fill="#FF6A00" />
+  </g>
+
+  <!-- TEXT BRANDING SECTION -->
+  <g transform="translate(500, 690)" text-anchor="middle">
+    <!-- "Mart Pro" Text -->
+    <text y="0" font-family="'Arial Black', 'Impact', 'Segoe UI Black', sans-serif" font-weight="900" font-size="185" letter-spacing="-4" font-style="italic">
+      <tspan fill="#1E2229" dx="-20">Mart</tspan>
+      <tspan fill="#FF6A00" dx="12">Pro</tspan>
+    </text>
+
+    <!-- Subtitle: "— Supermarket Management Software —" -->
+    <g transform="translate(0, 50)">
+      <!-- Left Orange Dash -->
+      <rect x="-450" y="-14" width="68" height="12" rx="6" fill="#FF6A00" />
+      
+      <!-- Subtitle Text -->
+      <text x="0" y="0" font-family="'Arial', 'Segoe UI', sans-serif" font-weight="800" font-size="35" fill="#1E2229" letter-spacing="1.5">
+        Supermarket Management Software
+      </text>
+
+      <!-- Right Orange Dash -->
+      <rect x="382" y="-14" width="68" height="12" rx="6" fill="#FF6A00" />
+    </g>
+  </g>
+</svg>

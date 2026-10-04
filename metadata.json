@@ -1,0 +1,11 @@
+{
+  "name": "Mart Pro",
+  "description": "Comprehensive supermarket management software with Super Admin, Store Admin, Product Register stock management, and Cash Counter POS with real-time Firebase sync.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

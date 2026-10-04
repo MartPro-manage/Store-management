@@ -1,0 +1,124 @@
+{
+  "entities": {
+    "UserAccount": {
+      "title": "User Account",
+      "description": "User account information and role access",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "username": { "type": "string" },
+        "role": { "type": "string" },
+        "storeId": { "type": "string" },
+        "storeName": { "type": "string" }
+      }
+    },
+    "Store": {
+      "title": "Store",
+      "description": "Supermarket store profile and branch configurations",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "adminUsername": { "type": "string" }
+      }
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Catalog inventory item with retail pricing and barcode",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "storeId": { "type": "string" },
+        "name": { "type": "string" },
+        "price": { "type": "number" },
+        "stock": { "type": "number" },
+        "barcode": { "type": "string" }
+      }
+    },
+    "Sale": {
+      "title": "Sale",
+      "description": "Customer checkout transaction and billing ledger",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "storeId": { "type": "string" },
+        "receiptNumber": { "type": "string" },
+        "total": { "type": "number" },
+        "timestamp": { "type": "string" }
+      }
+    },
+    "StaffSession": {
+      "title": "Staff Session",
+      "description": "Cashier and staff online shift logs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "storeId": { "type": "string" },
+        "userId": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "Expense": {
+      "title": "Expense",
+      "description": "Store operational expense record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "storeId": { "type": "string" },
+        "amount": { "type": "number" },
+        "category": { "type": "string" }
+      }
+    },
+    "SentReceiptLog": {
+      "title": "Sent Receipt Log",
+      "description": "Log of e-receipts sent to customer Gmail via centralized supermarketmanage@gmail.com",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "storeId": { "type": "string" },
+        "storeName": { "type": "string" },
+        "receiptNumber": { "type": "string" },
+        "saleId": { "type": "string" },
+        "customerEmail": { "type": "string" },
+        "senderEmail": { "type": "string" },
+        "totalAmount": { "type": "number" },
+        "sentAt": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "UserAccount",
+      "description": "User accounts"
+    },
+    "stores": {
+      "schema": "Store",
+      "description": "Stores"
+    },
+    "products": {
+      "schema": "Product",
+      "description": "Store product catalog and inventory"
+    },
+    "sales": {
+      "schema": "Sale",
+      "description": "Store sales invoices"
+    },
+    "held_bills": {
+      "schema": "Sale",
+      "description": "Parked transactions"
+    },
+    "expenses": {
+      "schema": "Expense",
+      "description": "Store operational expenses"
+    },
+    "staff_sessions": {
+      "schema": "StaffSession",
+      "description": "Cashier shifts"
+    },
+    "sent_receipts": {
+      "schema": "SentReceiptLog",
+      "description": "Dispatched customer digital e-receipt logs"
+    }
+  }
+}
